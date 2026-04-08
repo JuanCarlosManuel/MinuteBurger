@@ -13,8 +13,16 @@ export default function AdminPage() {
   const [menuUrl, setMenuUrl] = useState("");
 
   useEffect(() => {
-    // Set the menu URL dynamically based on the current site origin
-    setMenuUrl(`${window.location.origin}/menu`);
+    // Get the site origin dynamically for production-ready QR URLs
+    // In production on Vercel: window.location.origin will be the deployed URL
+    // In development: window.location.origin will be localhost:3000
+    // Fallback to environment variable if somehow needed
+    const siteOrigin =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : process.env.NEXT_PUBLIC_SITE_URL || "https://minute-burger.vercel.app";
+
+    setMenuUrl(`${siteOrigin}/menu`);
   }, []);
 
   const handleLogout = () => {

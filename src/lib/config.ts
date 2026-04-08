@@ -5,8 +5,8 @@ export const ADMIN_CREDENTIALS = {
   password: "admin123",
 };
 
-// Replace this when your computer's local IPv4 changes.
-// Use your machine's LAN IP so phones on the same Wi-Fi can open the QR URL.
-export const BASE_URL = "https://minute-burger.vercel.app";
-
-export const MENU_QR_URL = `${BASE_URL}/menu`;
+// QR code menu URL is now dynamically generated in the admin page
+// using window.location.origin to ensure it works across all environments:
+// - Development: http://localhost:3000/menu
+// - Production (Vercel): https://minute-burger.vercel.app/menu
+// - Custom domains: https://your-domain.com/menu
