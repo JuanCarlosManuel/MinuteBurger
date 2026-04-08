@@ -2,15 +2,20 @@
 
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import AdminGuard from "@/app/components/admin/AdminGuard";
 import AdminQRCard from "@/app/components/admin/AdminQRCard";
 import { clearAdminAuthenticated } from "@/lib/adminAuth";
-import { MENU_QR_URL } from "@/lib/config";
 
 export default function AdminPage() {
   const router = useRouter();
+  const [menuUrl, setMenuUrl] = useState("");
+
+  useEffect(() => {
+    // Set the menu URL dynamically based on the current site origin
+    setMenuUrl(`${window.location.origin}/menu`);
+  }, []);
 
   const handleLogout = () => {
     clearAdminAuthenticated();
@@ -61,7 +66,7 @@ export default function AdminPage() {
           </section>
 
           <div className="grid gap-8 xl:grid-cols-[1.45fr_0.75fr]">
-            <AdminQRCard menuUrl={MENU_QR_URL} onPrint={handlePrint} />
+            <AdminQRCard menuUrl={menuUrl} onPrint={handlePrint} />
 
             <motion.aside
               initial={{ opacity: 0, y: 24 }}
@@ -90,7 +95,7 @@ export default function AdminPage() {
                       Admin session active
                     </div>
                     <a
-                      href={MENU_QR_URL}
+                      href={menuUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-3 text-sm font-medium text-white transition hover:border-yellow-300/60 hover:text-yellow-300"
