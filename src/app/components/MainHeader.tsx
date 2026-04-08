@@ -13,7 +13,7 @@ function MainHeader() {
           <div className="flex flex-row items-center gap-10">
             <div className="text-white">
               <Link href="/">
-                <img src="/burger-icon.svg" className="w-12 h-12" alt="Minute Burger Logo" />
+                <img src="/burger-icon.svg" className="w-40 h-12" alt="Bisnar's Burger Logo" />
               </Link>
             </div>
             <Navigation />

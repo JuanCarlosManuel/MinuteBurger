@@ -1,52 +1,30 @@
-<svg viewBox="0 0 280 100" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FCCF1D;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#FFB81C;stop-opacity:0.08" />
-    </linearGradient>
-    <filter id="textShadow">
-      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.3"/>
-    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+      .logo-text {
+        font-family: 'Righteous', sans-serif;
+        font-size: 72px;
+        font-weight: 900;
+        font-style: italic;
+        fill: #FCCF1D;
+        letter-spacing: 3px;
+        filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.6));
+      }
+    </style>
   </defs>
   
-  <!-- Background circle for icon -->
-  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)"/>
+  <!-- Background -->
+  <rect width="400" height="150" fill="#1a1a1a" rx="8"/>
   
-  <!-- Burger Icon -->
-  <g transform="translate(50, 50)">
-    <!-- Top bun -->
-    <ellipse cx="0" cy="-8" rx="16" ry="8" fill="#D4A574"/>
-    <path d="M -16 -8 Q -16 -12 -10 -14 Q 0 -16 10 -14 Q 16 -12 16 -8" fill="#E8C895"/>
-    
-    <!-- Sesame seeds -->
-    <circle cx="-8" cy="-12" r="1.5" fill="#F5DEB3"/>
-    <circle cx="0" cy="-13" r="1.5" fill="#F5DEB3"/>
-    <circle cx="8" cy="-12" r="1.5" fill="#F5DEB3"/>
-    <circle cx="-5" cy="-10" r="1" fill="#F5DEB3"/>
-    <circle cx="6" cy="-10" r="1" fill="#F5DEB3"/>
-    
-    <!-- Cheese -->
-    <rect x="-14" y="-2" width="28" height="5" fill="#FFD700" rx="1"/>
-    
-    <!-- Lettuce -->
-    <path d="M -14 3 Q -10 5 0 5 Q 10 5 14 3" fill="#7CB342" stroke="#558B2F" stroke-width="0.5"/>
-    
-    <!-- Patty -->
-    <rect x="-14" y="6" width="28" height="6" fill="#8B4513" rx="1"/>
-    
-    <!-- Bottom bun -->
-    <ellipse cx="0" cy="16" rx="16" ry="8" fill="#D4A574"/>
-    <path d="M -16 12 Q -16 8 -10 6 Q 0 4 10 6 Q 16 8 16 12" fill="#C9956F"/>
-  </g>
+  <!-- Border accent -->
+  <rect x="2" y="2" width="396" height="146" fill="none" stroke="#FCCF1D" stroke-width="2" rx="6" opacity="0.4"/>
   
-  <!-- Brand text: Bisnar's Burger -->
-  <text x="115" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3" filter="url(#textShadow)">
-    Bisnar's
-  </text>
-  <text x="115" y="72" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FCCF1D" letter-spacing="0.5" filter="url(#textShadow)">
-    Burger
+  <!-- Bold text logo -->
+  <text x="200" y="100" class="logo-text" text-anchor="middle">
+    BISNAR'S BURGER
   </text>
   
   <!-- Accent line -->
-  <line x1="115" y1="78" x2="270" y2="78" stroke="#FCCF1D" stroke-width="2"/>
+  <line x1="40" y1="115" x2="360" y2="115" stroke="#FCCF1D" stroke-width="2" opacity="0.6"/>
 </svg>
