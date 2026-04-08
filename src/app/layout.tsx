@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-gradient-to-b from-orange-50 via-amber-50 to-orange-100 min-h-screen ${inter.className}`}
+        className={`bg-[url('/background.jpg')] bg-repeat bg-contain ${inter.className}`}
       >
         <GlobalContextProvider>
           {/* <ServiceWorker /> */}
