@@ -1,6 +1,16 @@
 <svg viewBox="0 0 280 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCCF1D;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#FFB81C;stop-opacity:0.08" />
+    </linearGradient>
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
   <!-- Background circle for icon -->
-  <circle cx="50" cy="50" r="48" fill="#FCCF1D" opacity="0.15"/>
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)"/>
   
   <!-- Burger Icon -->
   <g transform="translate(50, 50)">
@@ -29,11 +39,11 @@
     <path d="M -16 12 Q -16 8 -10 6 Q 0 4 10 6 Q 16 8 16 12" fill="#C9956F"/>
   </g>
   
-  <!-- Text: Minute Burger -->
-  <text x="115" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF" letter-spacing="0.5">
-    Minute
+  <!-- Brand text: Bisnar's Burger -->
+  <text x="115" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3" filter="url(#textShadow)">
+    Bisnar's
   </text>
-  <text x="115" y="72" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FCCF1D" letter-spacing="0.5">
+  <text x="115" y="72" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FCCF1D" letter-spacing="0.5" filter="url(#textShadow)">
     Burger
   </text>
   
