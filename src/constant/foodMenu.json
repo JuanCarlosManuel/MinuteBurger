@@ -79,7 +79,7 @@
   {
     "id": 12,
     "name": "Water",
-    "image": "/water.jpg",
+    "image": "/Water.jpg",
     "price": 10,
     "category": "Drinks"
   },
