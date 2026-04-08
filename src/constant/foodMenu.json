@@ -44,42 +44,42 @@
   {
     "id": 7,
     "name": "Coca Cola",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1554866585-acbb2c3d2b6c?w=400&h=400&fit=crop",
     "price": 79,
     "category": "Drinks"
   },
   {
     "id": 8,
     "name": "Sprite",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1598548946097-d93cdc6e08e0?w=400&h=400&fit=crop",
     "price": 79,
     "category": "Drinks"
   },
   {
     "id": 9,
     "name": "Orange Juice",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop",
     "price": 99,
     "category": "Drinks"
   },
   {
     "id": 10,
     "name": "Iced Tea",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
     "price": 89,
     "category": "Drinks"
   },
   {
     "id": 11,
     "name": "Milkshake",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1578502494516-d7a0a6f37342?w=400&h=400&fit=crop",
     "price": 129,
     "category": "Drinks"
   },
   {
     "id": 12,
     "name": "Water",
-    "image": "/beef-burger.webp",
+    "image": "https://images.unsplash.com/photo-1589985643966-42b3b3b4d0e8?w=400&h=400&fit=crop",
     "price": 29,
     "category": "Drinks"
   }
