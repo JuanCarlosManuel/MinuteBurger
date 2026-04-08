@@ -6,10 +6,13 @@ import React, { useState, useEffect } from "react";
 
 import AdminGuard from "@/app/components/admin/AdminGuard";
 import AdminQRCard from "@/app/components/admin/AdminQRCard";
+import AdminOrders from "@/app/components/admin/AdminOrders";
 import { clearAdminAuthenticated } from "@/lib/adminAuth";
+import { useGlobalContext } from "@/context/store";
 
 export default function AdminPage() {
   const router = useRouter();
+  const { orders, updateOrderStatus } = useGlobalContext();
   const [menuUrl, setMenuUrl] = useState("");
 
   useEffect(() => {
@@ -50,12 +53,10 @@ export default function AdminPage() {
                   Admin Dashboard
                 </p>
                 <h1 className="mt-4 text-4xl font-semibold leading-tight text-white lg:text-5xl">
-                  Control menu sharing from one clean, printable workspace.
+                  Manage Orders & Menu Access
                 </h1>
                 <p className="mt-5 max-w-2xl text-sm leading-8 text-slate-300 lg:text-base">
-                  This lightweight dashboard gives you secure local access to a
-                  menu QR code, a clean print flow, and a fast logout action
-                  without introducing a backend or database.
+                  Track all customer orders with their items and details. Update order status in real-time and manage menu sharing securely.
                 </p>
               </div>
 
@@ -64,13 +65,26 @@ export default function AdminPage() {
                   Menu QR
                 </span>
                 <span className="rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-sm text-white/90">
-                  Browser Print
+                  Order Management
                 </span>
                 <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200">
                   Local network ready
                 </span>
               </div>
             </div>
+          </section>
+
+          {/* Orders Section */}
+          <section className="rounded-[2rem] border border-white/12 bg-slate-950/60 p-6 shadow-[0_30px_70px_rgba(2,6,23,0.35)] backdrop-blur-xl">
+            <div className="mb-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-amber-300/80">
+                Orders Management
+              </p>
+              <h2 className="mt-4 text-2xl font-semibold text-white">
+                Recent Orders ({orders.length})
+              </h2>
+            </div>
+            <AdminOrders orders={orders} onStatusChange={updateOrderStatus} />
           </section>
 
           <div className="grid gap-8 xl:grid-cols-[1.45fr_0.75fr]">
