@@ -174,9 +174,11 @@ function page() {
             )}
           </div>
           <div className="px-4 py-6 flex flex-col">
-            <div className="flex flex-row justify-between text-white mb-4">
-              <span>Subtotal:</span>
-              <span className="font-semibold">₱{subtotal.toLocaleString()}</span>
+            <div className="border-t border-gray-600 pt-4 mb-4">
+              <div className="flex flex-row justify-between text-white">
+                <span className="text-gray-300">Subtotal:</span>
+                <span className="font-semibold text-lg">₱{subtotal.toLocaleString()}</span>
+              </div>
             </div>
 
             {error && (

@@ -1,86 +1,93 @@
 [
   {
     "id": 1,
-    "name": "cheese hamburger",
+    "name": "Cheese Hamburger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 80,
     "category": "Burgers"
   },
   {
     "id": 2,
-    "name": "chicken burger",
+    "name": "Chicken Burger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 75,
     "category": "Burgers"
   },
   {
     "id": 3,
-    "name": "roots burger",
+    "name": "Roots Burger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 50,
     "category": "Burgers"
   },
   {
     "id": 4,
-    "name": "volkano burger",
+    "name": "Volkano Burger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 45,
     "category": "Burgers"
   },
   {
     "id": 5,
-    "name": "doubleB burger",
+    "name": "Double B Burger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 60,
     "category": "Burgers"
   },
   {
     "id": 6,
-    "name": "doodle burger",
+    "name": "Doodle Burger",
     "image": "/beef-burger.webp",
-    "price": 599,
+    "price": 60,
     "category": "Burgers"
   },
   {
     "id": 7,
     "name": "Coca Cola",
     "image": "https://images.unsplash.com/photo-1554866585-acbb2c3d2b6c?w=400&h=400&fit=crop",
-    "price": 79,
+    "price": 25,
     "category": "Drinks"
   },
   {
     "id": 8,
     "name": "Sprite",
     "image": "https://images.unsplash.com/photo-1598548946097-d93cdc6e08e0?w=400&h=400&fit=crop",
-    "price": 79,
+    "price": 25,
     "category": "Drinks"
   },
   {
     "id": 9,
     "name": "Orange Juice",
     "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop",
-    "price": 99,
+    "price": 40,
     "category": "Drinks"
   },
   {
     "id": 10,
     "name": "Iced Tea",
     "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
-    "price": 89,
+    "price": 30,
     "category": "Drinks"
   },
   {
     "id": 11,
     "name": "Milkshake",
     "image": "https://images.unsplash.com/photo-1578502494516-d7a0a6f37342?w=400&h=400&fit=crop",
-    "price": 129,
+    "price": 50,
     "category": "Drinks"
   },
   {
     "id": 12,
     "name": "Water",
     "image": "https://images.unsplash.com/photo-1589985643966-42b3b3b4d0e8?w=400&h=400&fit=crop",
-    "price": 29,
+    "price": 10,
+    "category": "Drinks"
+  },
+  {
+    "id": 13,
+    "name": "Gulaman",
+    "image": "https://images.unsplash.com/photo-1577119967872-1b83f9df60fc?w=400&h=400&fit=crop",
+    "price": 20,
     "category": "Drinks"
   }
 ]

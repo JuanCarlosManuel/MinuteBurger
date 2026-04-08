@@ -8,8 +8,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Minute Burger | Best Burger In Town",
-  description: "Minute burger has the best burgers in town",
+  title: "Bisnar's Burger | Best Burger In Town",
+  description: "Bisnar's burger has the best burgers in town",
 };
 
 export default function RootLayout({
