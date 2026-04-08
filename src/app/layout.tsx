@@ -24,9 +24,13 @@ export default function RootLayout({
       >
         <GlobalContextProvider>
           {/* <ServiceWorker /> */}
-          <MainHeader />
+          <div className="no-print">
+            <MainHeader />
+          </div>
           <main>{children}</main>
-          <MainFooter />
+          <div className="no-print">
+            <MainFooter />
+          </div>
         </GlobalContextProvider>
         <Script src="/service-worker.js" />
       </body>

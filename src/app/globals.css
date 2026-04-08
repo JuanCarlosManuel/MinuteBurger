@@ -4,3 +4,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  body {
+    min-height: auto !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-shell {
+    padding: 0 !important;
+  }
+
+  .print-card {
+    border: none !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .print-area {
+    display: block !important;
+    padding: 0 !important;
+    color: #020617 !important;
+  }
+
+  .print-title {
+    font-size: 2rem !important;
+  }
+}

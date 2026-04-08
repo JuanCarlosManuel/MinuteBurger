@@ -1,0 +1,6 @@
+[mcp_servers.vercel]
+command = "node"
+args = ["mcp/vercel-server.mjs"]
+
+[mcp_servers.vercel.tools.list_projects]
+approval_mode = "approve"

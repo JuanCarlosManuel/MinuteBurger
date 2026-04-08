@@ -2,14 +2,30 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { isAdminAuthenticated } from "@/lib/adminAuth";
 import navigationMenu from "../../constant/navigationMenu.json";
 
 function Navigation() {
   const pathname = usePathname();
+  const [isAdmin, setIsAdmin] = React.useState(false);
+
+  React.useEffect(() => {
+    const syncAdminState = () => setIsAdmin(isAdminAuthenticated());
+
+    syncAdminState();
+    window.addEventListener("storage", syncAdminState);
+
+    return () => window.removeEventListener("storage", syncAdminState);
+  }, [pathname]);
+
+  const menuItems = isAdmin
+    ? [...navigationMenu.mainMenu, { title: "Admin", link: "/admin" }]
+    : navigationMenu.mainMenu;
+
   return (
     <nav className="hidden lg:flex">
       <ul className="flex flex-row gap-4">
-        {navigationMenu.mainMenu.map((item, index) => (
+        {menuItems.map((item, index) => (
           <li className="group" key={index}>
             <Link
               href={item.link}

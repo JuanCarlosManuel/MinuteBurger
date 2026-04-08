@@ -2,14 +2,30 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { isAdminAuthenticated } from "@/lib/adminAuth";
 import navigationMenu from "../../constant/navigationMenu.json";
 
 function MobileNavigation() {
   const pathname = usePathname();
+  const [isAdmin, setIsAdmin] = React.useState(false);
+
+  React.useEffect(() => {
+    const syncAdminState = () => setIsAdmin(isAdminAuthenticated());
+
+    syncAdminState();
+    window.addEventListener("storage", syncAdminState);
+
+    return () => window.removeEventListener("storage", syncAdminState);
+  }, [pathname]);
+
+  const menuItems = isAdmin
+    ? [...navigationMenu.mainMenu, { title: "Admin", link: "/admin" }]
+    : navigationMenu.mainMenu;
+
   return (
     <nav className="flex flex-col p-4 w-full">
       <ul className="flex flex-col gap-4 w-full">
-        {navigationMenu.mainMenu.map((item, index) => (
+        {menuItems.map((item, index) => (
           <li key={index} className="w-full">
             <Link
               href={item.link}
