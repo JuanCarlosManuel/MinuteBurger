@@ -3,36 +3,84 @@
     "id": 1,
     "name": "cheese hamburger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
   },
   {
     "id": 2,
     "name": "chicken burger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
   },
   {
     "id": 3,
     "name": "roots burger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
   },
   {
     "id": 4,
     "name": "volkano burger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
   },
   {
     "id": 5,
     "name": "doubleB burger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
   },
   {
     "id": 6,
     "name": "doodle burger",
     "image": "/beef-burger.webp",
-    "price": 29.99
+    "price": 599,
+    "category": "Burgers"
+  },
+  {
+    "id": 7,
+    "name": "Coca Cola",
+    "image": "/beef-burger.webp",
+    "price": 79,
+    "category": "Drinks"
+  },
+  {
+    "id": 8,
+    "name": "Sprite",
+    "image": "/beef-burger.webp",
+    "price": 79,
+    "category": "Drinks"
+  },
+  {
+    "id": 9,
+    "name": "Orange Juice",
+    "image": "/beef-burger.webp",
+    "price": 99,
+    "category": "Drinks"
+  },
+  {
+    "id": 10,
+    "name": "Iced Tea",
+    "image": "/beef-burger.webp",
+    "price": 89,
+    "category": "Drinks"
+  },
+  {
+    "id": 11,
+    "name": "Milkshake",
+    "image": "/beef-burger.webp",
+    "price": 129,
+    "category": "Drinks"
+  },
+  {
+    "id": 12,
+    "name": "Water",
+    "image": "/beef-burger.webp",
+    "price": 29,
+    "category": "Drinks"
   }
 ]

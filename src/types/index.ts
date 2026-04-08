@@ -3,6 +3,7 @@ export interface MenuItemProps {
   name: string;
   price: number;
   image: string;
+  category?: string;
 }
 
 export interface CartItemProps {
