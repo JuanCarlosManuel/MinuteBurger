@@ -44,49 +44,49 @@
   {
     "id": 7,
     "name": "Coca Cola",
-    "image": "https://images.unsplash.com/photo-1554866585-acbb2c3d2b6c?w=400&h=400&fit=crop",
+    "image": "/Coca Cola.jpg",
     "price": 25,
     "category": "Drinks"
   },
   {
     "id": 8,
     "name": "Sprite",
-    "image": "https://images.unsplash.com/photo-1598548946097-d93cdc6e08e0?w=400&h=400&fit=crop",
+    "image": "/sprite.jpg",
     "price": 25,
     "category": "Drinks"
   },
   {
     "id": 9,
     "name": "Orange Juice",
-    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=400&fit=crop",
+    "image": "/OJ.jpg",
     "price": 40,
     "category": "Drinks"
   },
   {
     "id": 10,
     "name": "Iced Tea",
-    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
+    "image": "/ICE T.jpg",
     "price": 30,
     "category": "Drinks"
   },
   {
     "id": 11,
     "name": "Milkshake",
-    "image": "https://images.unsplash.com/photo-1578502494516-d7a0a6f37342?w=400&h=400&fit=crop",
+    "image": "/Milkshake.jpg",
     "price": 50,
     "category": "Drinks"
   },
   {
     "id": 12,
     "name": "Water",
-    "image": "https://images.unsplash.com/photo-1589985643966-42b3b3b4d0e8?w=400&h=400&fit=crop",
+    "image": "/water.jpg",
     "price": 10,
     "category": "Drinks"
   },
   {
     "id": 13,
     "name": "Gulaman",
-    "image": "https://images.unsplash.com/photo-1577119967872-1b83f9df60fc?w=400&h=400&fit=crop",
+    "image": "/Gulaman.jpg",
     "price": 20,
     "category": "Drinks"
   }
